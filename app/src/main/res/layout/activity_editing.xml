@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="#000000"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Email"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_h"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_title"
+            android:text="hub"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <EditText
+                android:id="@+id/et_from"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="16sp"
+                android:textColor="#FF8000"
+                android:background="@drawable/bg_field"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:maxLines="1"
+                android:hint="From"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/et_to"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/et_from"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:textColor="#FF8000"
+                android:background="@drawable/bg_field"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:maxLines="1"
+                android:hint="To"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                android:id="@+id/et_cc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/et_to"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:textColor="#FF8000"
+                android:background="@drawable/bg_field"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:maxLines="1"
+                android:hint="cc"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                android:id="@+id/et_bcc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/et_cc"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:textColor="#FF8000"
+                android:background="@drawable/bg_field"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:maxLines="1"
+                android:hint="bcc"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                android:id="@+id/et_subject"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/et_bcc"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:textColor="#FF8000"
+                android:background="@drawable/bg_field"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:maxLines="1"
+                android:hint="Subject"
+                android:inputType="textEmailSubject"/>
+
+            <EditText
+                android:id="@+id/et_email_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_subject"
+                android:paddingTop="15dp"
+                android:paddingBottom="50dp"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:textColor="#FF8000"
+                android:background="@drawable/bg_field"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:maxLines="50"
+                android:hint="Email Body"
+                android:inputType="textMultiLine"/>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_below="@id/et_email_body"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="Send"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    android:background="@drawable/bg_btn"
+                    />
+
+                <Button
+                    android:id="@+id/btn_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="Clear"
+                    android:textColor="#00FFE1"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:background="@drawable/bg_btn"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity=""/>
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

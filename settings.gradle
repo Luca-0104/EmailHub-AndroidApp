@@ -1,0 +1,2 @@
+rootProject.name = "Assignment1_EmailAssistant"
+include ':app'
